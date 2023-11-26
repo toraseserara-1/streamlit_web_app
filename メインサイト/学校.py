@@ -13,8 +13,6 @@ date6 = (date.second)
 
 st.title("提出物の日程登録フォーム")
 
-image = Image.open("メインサイト/data/悩み君.png")
-st.image(image,width=50)
 
 with st.form(key='確認'):
     name = st.text_input("名前(任意です。)")
