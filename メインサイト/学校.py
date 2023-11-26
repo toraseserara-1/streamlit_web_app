@@ -28,7 +28,7 @@ with st.form(key='確認'):
     
     submit_btn = st.form_submit_button(label='決定')
     if submit_btn:
-            st.text(name+"先生。予定が設定されました。")
+            st.text(name+"先生。予定が設定されました。ありがとうございます。")
         
      
     
