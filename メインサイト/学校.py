@@ -33,7 +33,9 @@ with st.form(key='確認'):
      
     
 if submit_btn:
-    print(subject)
-    print(start_date)
-    print(str(hour)+"時"+str(minite)+'分'+str(second1)+"秒")
-    print(content)
+    subject_main = subject
+    start_date_main = start_date
+    hour_main = hour
+    minite_main = minite
+    second_main = second1
+    content_main = content
