@@ -54,6 +54,6 @@ def handle_json(s: str, file_name: str = "sample.json"):
   with open(file_name, "r") as f:
     dic = json.load(f)
     s = dic[key]
-    print(s)
+    st.text(s)
 
 handle_json("Hoge/ふが\n#\tピヨ")
