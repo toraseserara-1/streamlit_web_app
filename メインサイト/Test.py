@@ -20,8 +20,9 @@
   </head>
   <body>
     <py-script>
+      import streamlit as st
       import 学校
-      
+      st.text()
     </py-script>  
   </body>
 </html>
