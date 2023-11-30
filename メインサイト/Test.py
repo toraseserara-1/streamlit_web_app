@@ -22,7 +22,7 @@
     <py-script>
       import streamlit as st
       import 学校
-      st.text()
+      st.text(学校.name)
     </py-script>  
   </body>
 </html>
