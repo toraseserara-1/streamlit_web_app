@@ -41,14 +41,5 @@ def main():
         minite_main = minite
         second_main = second1
         content_main = content
-        with open("Subject_main.txt","w") as file:
-            file.write(subject_main)
-            st.success("hogehoge")
-if __name__ == "__main__":
-    main()
+        
     
-import test
-st.text(test.s)
-    
-
-handle_json("Hoge/ふが\n#\tピヨ")
