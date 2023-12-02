@@ -41,5 +41,7 @@ def main():
         minite_main = minite
         second_main = second1
         content_main = content
+
+main()
         
     
