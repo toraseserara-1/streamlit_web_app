@@ -1,7 +1,6 @@
 import streamlit as st 
-from PIL import Image
 import datetime
-
+import csv
 
 date = datetime.datetime.now()
 date1 = (date.year)
@@ -42,10 +41,12 @@ if submit_btn:
     content_main = content
 
 # ファイルに情報を書き込む
-with open('streamlit_web_app/メインサイト/test.txt', 'a') as file:
-    file.write(subject_main)
-with open('streamlit_web_app/メインサイト/test.txt', 'a') as file:
-    file.write(start_date_main)
+file_path = 'streamlit_web_app/メインサイト/test.csv'
+with open(file_path, 'a', newline='') as file:
+    writer = csv.writer(file)
+    
+    # CSVファイルに一行書き込む
+    writer.writerow([subject_main, start_date_main, hour_main, minute_main, second_main, content_main])
 
 
         
