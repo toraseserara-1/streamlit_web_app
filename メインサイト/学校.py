@@ -41,8 +41,6 @@ if submit_btn:
     second_main = second1
     content_main = content
 
-if __name__ == "__main__":
-    # Change the port to 80
-    st.run(port=80)
+
         
     
