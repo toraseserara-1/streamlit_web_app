@@ -41,6 +41,12 @@ if submit_btn:
     second_main = second1
     content_main = content
 
+# ファイルに情報を書き込む
+with open('hozon.txt', 'a') as file:
+    file.write(subject_main)
+with open('hozon.txt', 'a') as file:
+    file.write(start_date_main)
+
 
         
     
