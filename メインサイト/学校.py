@@ -42,9 +42,9 @@ if submit_btn:
     content_main = content
 
 # ファイルに情報を書き込む
-with open('hozon.txt', 'a') as file:
+with open('streamlit_web_app/メインサイト/test.txt', 'a') as file:
     file.write(subject_main)
-with open('hozon.txt', 'a') as file:
+with open('streamlit_web_app/メインサイト/test.txt', 'a') as file:
     file.write(start_date_main)
 
 
