@@ -1,6 +1,5 @@
 import streamlit as st 
 import datetime
-import csv
 
 date = datetime.datetime.now()
 date1 = (date.year)
@@ -41,12 +40,9 @@ if submit_btn:
     content_main = content
 
 # ファイルに情報を書き込む
-file_path = 'streamlit_web_app/メインサイト/test.csv'
-with open(file_path, 'a', newline='') as file:
-    writer = csv.writer(file)
-    
-    # CSVファイルに一行書き込む
-    writer.writerow([subject_main, start_date_main, hour_main, minute_main, second_main, content_main])
+file_path = 'streamlit_web_app/メインサイト/test.txt'
+with open(file_path, 'a') as file:
+    file.write(f"{subject_main}, {start_date_main}, {hour_main}, {minute_main}, {second_main}, {content_main}\n")
 
 
         
